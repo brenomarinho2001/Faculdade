@@ -1,0 +1,24 @@
+import React from 'react';
+import { Text, StyleSheet } from 'react-native';
+
+export default function Estudantes({nome}){
+  return (
+      <Text style={styles.innerText} >
+        Minha Universidade é a {nome}
+      </Text>
+  );
+}
+
+const styles = StyleSheet.create({
+  baseText: {
+    fontWeight: 'bold'
+  },
+  innerText: {
+    color: 'red',
+    fontSize: '25px',
+    fontFamily: 'arial',
+    backgroundColor: 'white'
+    
+  }
+});
+
